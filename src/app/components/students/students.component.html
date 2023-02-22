@@ -1,0 +1,12 @@
+<p>students works!</p>
+<div style="display: flex;">
+    <div>
+    <student *ngFor="let student of listOfStudents" 
+    [studentInfo]="student" 
+    (selectedStudentInformation)="test(student)" ></student>
+</div>
+<div>
+    <app-student-details [selectedStudent]="selecetdStudent"></app-student-details>
+</div>
+
+</div>

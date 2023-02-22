@@ -1,0 +1,25 @@
+.leftMenu {
+    width: 300px;
+    background: navy;
+    height: 100%;
+
+ ul {
+        list-style: none;
+        padding-top: 15px;
+
+        li {
+                margin: 0px 0 5px 0;
+                display: block;
+
+                a {
+                        padding: 10px;
+                        background: #000;
+                        width: 100%;
+                        color: #fff;
+                        border-radius: 5px;
+                        display: block;
+                        text-align: center;
+                    }
+            }
+        }
+    }
