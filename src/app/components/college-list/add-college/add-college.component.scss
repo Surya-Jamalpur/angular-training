@@ -1,0 +1,38 @@
+
+.addFormContainer {
+    width: 100%;
+}
+.addForm {
+    background: #e1e1e1;
+    border: solid 1px #9a9a9a;
+    padding: 40px 60px;
+    width: 400px;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+
+.formControl {
+
+    label {
+        width: 100%;
+        margin-bottom: 5px;
+        display: block;
+    }
+    input {
+        width: 100%;
+        border-radius: 4px;
+        padding: 4px 6px ;
+        border: solid 1px #9d9d9d;
+        outline: none;
+    }
+    
+}
+.submitBtn {
+    border: solid 2px red;
+    color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+}

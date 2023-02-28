@@ -1,0 +1,12 @@
+<button (click)="goToAddEditCollege()" class="primaryBtn" >Add College</button>
+
+<div class="contentBox">
+    <div class="listCol">
+        <div class="collegeList" >
+            <app-college *ngFor="let college of collegeList" [College]="college"></app-college>
+        </div>
+    </div>
+    <div class="detailsCol">
+
+    </div>
+</div>

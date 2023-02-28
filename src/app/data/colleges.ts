@@ -1,0 +1,23 @@
+[
+  {
+    name: 'Surya College of Science',
+    location: 'Hyderabad, India',
+    phone: 5544112233,
+    email: 'jsurya352@gmail.com',
+    courses: ['Biolozy', 'Physics', 'computers'],
+  },
+  {
+    name: 'Some Name College of Science',
+    location: 'Hyderabad, India',
+    phone: 5544112233,
+    email: 'jsurya352@gmail.com',
+    courses: ['Biolozy', 'Physics', 'computers'],
+  },
+  {
+    name: 'Indian College',
+    location: 'Hyderabad, India',
+    phone: 5544112233,
+    email: 'jsurya352@gmail.com',
+    courses: ['Biolozy', 'Physics', 'computers'],
+  },
+];

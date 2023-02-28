@@ -10,3 +10,10 @@
     height: calc(100vh - 110px);
     display: flex;
 }
+.primaryBtn {   
+    background: green;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}

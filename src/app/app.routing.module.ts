@@ -5,6 +5,8 @@ import { StudentsComponent } from "./components/students/students.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { HomeComponent } from "./components/home/home.component";
 import { ServicesComponent } from "./components/services/services.component";
+import { CollegeListComponent } from "./components/college-list/college-list.component";
+import { AddCollegeComponent } from "./components/college-list/add-college/add-college.component";
 
 const routes:Routes=[
     {
@@ -32,6 +34,14 @@ const routes:Routes=[
     {
         path:'students',
         component:StudentsComponent
+    },
+    {
+        path:'collegeList',
+        component:CollegeListComponent
+    },
+    {
+        path:'collegeList/add',
+        component:AddCollegeComponent
     },
 ];
 // configures NgModule imports and exports
