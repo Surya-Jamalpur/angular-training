@@ -2,28 +2,28 @@
 
 <div  class="addForm">
 <h4>Add College</h4>
-<form action="">
+<form>
     <div class="formControl">
-        <label for="name">College Name</label>
-        <input type="text" />
+        <label for="clgName">College Name</label>
+        <input type="text" name="clgName" [(ngModel)]="clgName" />
     </div>
     <div class="formControl">
-        <label for="name">Location</label>
-        <input type="text" />
+        <label for="location">Location</label>
+        <input type="text" name="location" [(ngModel)]="clgLocation" />
     </div>
    <div class="formControl">
-        <label for="name">Phone</label>
-        <input type="text" />
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" [(ngModel)]="clgPhone" />
     </div>
     <div class="formControl">
-        <label for="name">Email</label>
-        <input type="text" />
+        <label for="email">Email</label>
+        <input type="text" name="email" [(ngModel)]="clgEmail" />
     </div>
     <div class="formControl">
-        <label for="name">Cources</label>
-        <input type="text" />
+        <label for="cources">Cources</label>
+        <input type="text" name="cources" [(ngModel)]="clgCources" />
     </div>
-    <button type="submit" class="submitBtn">Add</button>
+    <button type="submit" (click)="addCollege()" class="submitBtn">Add</button>
 </form>
 </div>
 </div>

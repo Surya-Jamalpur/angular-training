@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { college } from 'src/app/models/college.model';
 import * as collegesData from 'src/app/data/collegeList.json'
 import { Router } from '@angular/router';
+import { CollegeService } from './college.service';
 
 @Component({
   selector: 'app-college-list',
@@ -10,52 +11,19 @@ import { Router } from '@angular/router';
 })
 
 export class CollegeListComponent {
-  collegeList:college[]= [
-   {
-      "id":1,
-      "name":"Surya College of Science",
-      "location":"Hyderabad, India",
-      "phone":5544112233,
-      "email":"jsurya352@gmail.com",
-      "courses":[
-         "Biolozy",
-         "Physics",
-         "computers"
-      ]
-   },
-   {
-      "id":2,
-      "name":"Some Name College of Science",
-      "location":"Hyderabad, India",
-      "phone":5544112233,
-      "email":"jsurya352@gmail.com",
-      "courses":[
-         "Biolozy",
-         "Physics",
-         "computers"
-      ]
-   },
-   // {
-   //    "id":3,
-   //    "name":"Indian College",
-   //    "location":"Hyderabad, India",
-   //    "phone":5544112233,
-   //    "email":"jsurya352@gmail.com",
-   //    "courses":[
-   //       "Biolozy",
-   //       "Physics",
-   //       "computers"
-   //    ]
-   // }
-]
+ collegeList:college[] = []
 constructor(
+   private clgService: CollegeService,
    private router:Router
 ){
-  console.log(this.collegeList);
+  console.log(this.clgService.collegeList);
+  this.collegeList = this.clgService.collegeList;
 }
 goToAddEditCollege(){
    //to do
 this.router.navigate(['/collegeList/add']);
 }
-
+showDetails(data:any){
+   console.log(data);
+}
 }

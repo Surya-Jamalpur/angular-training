@@ -1,5 +1,5 @@
 export interface college{
-    id:number,
+    id?:number,
     name:string,
     location?:string,
     phone:number,

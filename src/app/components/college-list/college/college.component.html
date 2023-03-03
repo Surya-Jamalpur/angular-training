@@ -2,21 +2,16 @@
 <div class="clgName">{{College.name}}</div>
 <ul class="clgDetails">
     <li>{{College.location}}</li>
-    <li>{{College.phone}}</li>
-    <li>{{College.email}}</li>
-    
-    
-    
 </ul>
 <ul class="actions">
     <li>
-        <button (click)="showDetails()">Details</button>
+        <button (click)="showDetails(College)">Details</button>
     </li>
     <li>
-        <button (click)="editCollege()">Edit</button>
+        <button (click)="editCollege(College)">Edit</button>
     </li>
     <li>
-        <button (click)="deleteCollege()">Delete</button>
+        <button (click)="deleteCollege(CollegeIndex)">Delete</button>
     </li>
 </ul>
 

@@ -1,4 +1,6 @@
-import { Component, Input } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
+import { college } from "src/app/models/college.model";
+import { CollegeService } from "../college.service";
 
 @Component({
     selector:'app-college',
@@ -9,7 +11,8 @@ import { Component, Input } from "@angular/core";
     padding: 10px 15px;
     border-radius: 8px;
     border: solid 1px #9d9d9d;
-    margin: 10px 0 0px 0
+    margin: 10px 0 0px 20px;
+        width: 300px;
 
     }
     .clgName {
@@ -42,14 +45,26 @@ import { Component, Input } from "@angular/core";
 })
 export class CollegeComponent {
     @Input()College:any;
-    constructor(){}
-    showDetails(){
+    @Input()CollegeIndex:any;
+    // @Output() selectedStudentInformation = new EventEmitter<String>();
+    @Output() onDetails = new EventEmitter<{}>();
+    constructor(
+        private clgService:CollegeService
+    ){}
+
+    showDetails(college:college){
+        this.onDetails.emit(college);
+    }
+
+editCollege(College:any){
 
 }
-editCollege(){
-
-}
-deleteCollege(){
+deleteCollege(CollegeIndex:any){
+    for(let i =0;i<this.clgService.collegeList.length; i++){
+        if(CollegeIndex === this.clgService.collegeList[i].id){
+            this.clgService.collegeList.splice(CollegeIndex, 1);
+        }
+    }
 
 }
 }

@@ -18,6 +18,7 @@ import { NavListComponent } from './components/nav-list/nav-list.component';
 import { StudentDetailsComponent } from './components/students/student-details/student-details.component';
 import { CollegeListComponent } from './components/college-list/college-list.component';
 import { CollegeComponent } from './components/college-list/college/college.component';
+import { AddCollegeComponent } from './components/college-list/add-college/add-college.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +35,13 @@ import { CollegeComponent } from './components/college-list/college/college.comp
     NavListComponent,
     StudentDetailsComponent,
     CollegeListComponent,
-    CollegeComponent
+    CollegeComponent,
+    AddCollegeComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
